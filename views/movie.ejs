@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <title><%=movie.title%></title>
+    </head>
+    <body>
+        <h1>Movies</h1>
+        <div class="line"></div>
+        <%- include('./includes/nav') %>
+        <main>
+            <div class="movie-container">
+                <h2><%= movie.title%></h2>
+                <img src="<%= movie.poster%>" alt="<%= movie.title%>" />
+                <p><%= movie.director%></p>
+                <p><%= movie.year%></p>
+            </div>
+        </main>
+    </body>
+</html>

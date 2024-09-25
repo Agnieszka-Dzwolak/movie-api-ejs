@@ -53,9 +53,8 @@ class Movie {
     static deleteMovie = (id) => {
         const movieExist = findMovie(movies, id);
         if (movieExist) {
-            return movies.filter((movie) => {
-                movie.id !== id;
-            });
+            movies = movies.filter((movie) => movie.id !== id);
+            return movies;
         } else {
             return null;
         }

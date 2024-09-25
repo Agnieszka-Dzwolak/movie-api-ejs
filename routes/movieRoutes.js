@@ -8,6 +8,7 @@ const {
     getAllMovies,
     getMovieById,
     addMovie,
+    updateMovieForm,
     updateMovie,
     deleteMovie,
     addMovieForm
@@ -15,9 +16,13 @@ const {
 
 router.get('/get', getAllMovies);
 router.get('/get/:id', getMovieById);
+//add movie
 router.get('/add', addMovieForm);
 router.post('/add', addMovie);
-router.put('/update/:id', updateMovie);
-router.delete('/delete/:id', deleteMovie);
+//update movie
+router.get('/update-form/:id', updateMovieForm);
+router.post('/update/:id', updateMovie);
+//delete movie
+router.get('/delete/:id', deleteMovie);
 
 export default router;

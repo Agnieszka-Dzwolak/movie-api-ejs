@@ -157,5 +157,41 @@ button {
 }
 
 button:hover {
-    background-color: #e6b800;
+    background-color: #9b7c00;
+}
+
+/* Basic button styling */
+.btn-update a,
+.btn-delete a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn-update a {
+    background-color: #4caf50; /* Green color for update */
+}
+
+.btn-update a:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.btn-delete a {
+    background-color: #f44336; /* Red color for delete */
+}
+
+.btn-delete a:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+.btn-update,
+.btn-delete {
+    margin: 10px 5px;
+    display: inline-block;
 }

@@ -17,7 +17,15 @@
             <img src="<%= movie.poster%>" alt="<%= movie.title%>">
             <p><%= movie.director%></p>
             <p><%= movie.year%></p>
-            <a href="/api/get/<%=movie.id%>">Show more info</a>
+            <div class="btn-details">
+            <a href="/api/get/<%=movie.id%>">Details</a>
+          </div>
+          <div class="btn-update">
+            <a href="/api/update-form/<%=movie.id%>">Update</a>
+          </div>
+          <div class="btn-delete">
+            <a href="/api/delete/<%=movie.id%>">Delete</a>
+          </div>
             
           </div>
         <% }); %>
